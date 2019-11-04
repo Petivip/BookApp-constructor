@@ -18,10 +18,8 @@ public class Book {
         this.isInStock=isInStock;
     }
 
-   public void getDisplayText(){
-        System.out.println(title);
-       System.out.println(author);
-       System.out.println(description);
+   public String getDisplayText(){
+      return title+ ", " + author+", "+description;
    }
 
     public String getTitle(){
