@@ -3,14 +3,14 @@ public class Book {
    private String author;
    private String description;
    private int price;
-   private String isInStock;
+   private boolean isInStock;
 
    //default constructor
    public Book(){};
 
    //overload constructor
 
-    public Book(String title,String author,String description, int price,String isInStock){
+    public Book(String title,String author,String description, int price,boolean isInStock){
         this.title=title;
         this.author=author;
         this.description=description;
@@ -48,10 +48,10 @@ public class Book {
    public void setPrice(int price){
         this.price=price;
    }
-   public String getIsInStock(){
+   public boolean getIsInStock(){
         return isInStock;
    }
-   public void setIsInStock(String isInStock){
+   public void setIsInStock(boolean isInStock){
         this.isInStock=isInStock;
    }
 }
